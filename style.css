@@ -1,6 +1,7 @@
 body {
   margin: 0;
   --multiplier: 1;
+  font-family: "MBOldStyle", Georgia, "Times New Roman", Times, serif;
 }
 
 .container {
@@ -54,23 +55,40 @@ p::selection {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
-    --multiplier: 0.9;
+    --multiplier: 1.2;
   }
 }
 @media (max-width: 767px) {
   body {
-    --multiplier: 0.825;
+    --multiplier: 1;
   }
 }
 @media (max-width: 1024px) {
+  h1 {
+    font-size: calc(14.85px * var(--multiplier));
+    margin-bottom: 1.35em;
+  }
   span,
 a {
     display: block;
   }
   p {
     text-align: center;
+    font-size: calc(14.15px * var(--multiplier));
   }
   p:not(:last-child) {
     margin-bottom: 1em;
   }
+  span {
+    font-size: calc(12px * var(--multiplier));
+  }
+  p {
+    margin: 0;
+  }
+}
+@font-face {
+  font-family: "MBOldStyle";
+  src: url("fonts/MBOldStyle-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }

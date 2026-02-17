@@ -24,6 +24,74 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/favicon.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://norman-wong.com/#person",
+          "name": "Norman Wong",
+          "url": "https://norman-wong.com/",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "General Inquiries",
+              "email": "info@norman-wong.com",
+              "availableLanguage": ["en"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "Stills Inquiries",
+              "email": "kathi@kzmagency.com",
+              "availableLanguage": ["en"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "Motion Inquiries",
+              "email": "christian@prodbydenim.com",
+              "availableLanguage": ["en"]
+            }
+          ],
+          "affiliation": [
+            { "@id": "https://kzmagency.com/#organization" },
+            { "@id": "https://prodbydenim.com/#organization" }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://norman-wong.com/#website",
+          "url": "https://norman-wong.com/",
+          "name": "NORMAN WONG",
+          "description": "This is the website of Norman Wong.",
+          "inLanguage": "en-CA",
+          "publisher": { "@id": "https://norman-wong.com/#person" }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://norman-wong.com/#profilepage",
+          "url": "https://norman-wong.com/",
+          "name": "NORMAN WONG",
+          "description": "This is the website of Norman Wong.",
+          "isPartOf": { "@id": "https://norman-wong.com/#website" },
+          "about": { "@id": "https://norman-wong.com/#person" },
+          "inLanguage": "en-CA"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://kzmagency.com/#organization",
+          "name": "KZM Agency",
+          "url": "https://kzmagency.com/"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://prodbydenim.com/#organization",
+          "name": "Prod by Denim",
+          "url": "https://prodbydenim.com/"
+        }
+      ]
+    }
+    </script>
 
 </head>
 
